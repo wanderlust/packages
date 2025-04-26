@@ -1,10 +1,11 @@
 (flim
  :fetcher github
- :repo "emacsmirror/flim"
+ :repo "wanderlust/flim"
  :files ("*.texi"
          "*.el"
          (:exclude "md5-dl.el"
                    "md5-el.el"
                    "mel-b-dl.el"
                    "sha1-dl.el"
-                   "smtpmail.el")))
+                   "smtpmail.el"))
+ :init-file "mime.el")

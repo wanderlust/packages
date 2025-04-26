@@ -1,11 +1,10 @@
 (apel
  :fetcher github
- :repo "emacsmirror/apel"
+ :repo "wanderlust/apel"
  ;; All tags are from more than two decades ago.
  :version-regexp "ignore-all-tags"
  :files ("alist.el"
          "apel-ver.el"
-         "apel.el"
          ;; This was already not included before switching to the
          ;; Emacsmirror and is not used by anything as far as I can
          ;; tell.  The Emacsmirror does NOT remove this file for now.
@@ -37,4 +36,5 @@
          "product.el"
          "pym.el"
          "richtext.el"
-         "static.el"))
+         "static.el")
+ :init-file "apel-ver.el")

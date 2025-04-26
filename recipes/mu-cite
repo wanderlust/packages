@@ -1,5 +1,5 @@
 (mu-cite
- :repo "ksato9700/mu-cite"
+ :repo "cvs-m17n-org/MU-CITE"
  :fetcher github
  ;; All tags are from more than two decades ago.
  :version-regexp "ignore-all-tags"
