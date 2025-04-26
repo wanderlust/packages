@@ -1212,9 +1212,9 @@ is the same as the value of `export_file_name'."
 
 (defun package-build--extract-from-library (rcp files)
   "Store information from the main-library from FILES in RCP."
-  (let* ((name (oref rcp name))
-         (file (concat name ".el"))
-         (file (or (car (rassoc file files)) file)))
+  (pcase-let* (((eieio name init-file) rcp)
+               (file (or init-file (concat name ".el")))
+               (file (or (car (rassoc file files)) file)))
     (when (file-exists-p file)
       (with-temp-buffer
         (insert-file-contents file)
@@ -1275,15 +1275,15 @@ is the same as the value of `export_file_name'."
                               "Invalid package name in dependency: %S" pkg))
                           (list pkg ver))
                         (eval deps)))
-          (when-let ((v (or (alist-get :url plist)
-                            (alist-get :homepage plist))))
+          (when-let ((v (or (plist-get plist :url)
+                            (plist-get plist :homepage))))
             (oset rcp webpage v))
-          (when-let ((v (alist-get :keywords plist)))
-            (oset rcp keywords v))
-          (when-let ((v (alist-get :maintainers plist)))
-            (oset rcp maintainers v))
-          (when-let ((v (alist-get :authors plist)))
-            (oset rcp authors v)))))))
+          (when-let ((v (plist-get plist :keywords)))
+            (oset rcp keywords (eval v)))
+          (when-let ((v (plist-get plist :maintainers)))
+            (oset rcp maintainers (eval v)))
+          (when-let ((v (plist-get plist :authors)))
+            (oset rcp authors (rval v))))))))
 
 (defun package-build--normalize-summary (summary)
   (if (or (not summary) (string-empty-p summary))
@@ -1611,10 +1611,11 @@ in `package-build-archive-dir'."
 
 (defun package-build--build-multi-file-package (rcp files)
   (declare (obsolete package-build--build-package "Package-Build 5.0.0"))
-  (pcase-let* (((eieio name version) rcp)
+  (pcase-let* (((eieio name version init-file) rcp)
                (tmpdir (file-name-as-directory (make-temp-file name t)))
                (target (expand-file-name (concat name "-" version) tmpdir)))
-    (unless (or (rassoc (concat name ".el") files)
+    (unless (or init-file
+                (rassoc (concat name ".el") files)
                 (rassoc (concat name "-pkg.el") files))
       (package-build--error name
         "%s[-pkg].el matching package name is missing" name))

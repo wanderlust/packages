@@ -54,6 +54,7 @@
    (make-targets    :initarg :make-targets   :initform nil)
    (org-exports     :initarg :org-exports    :initform nil)
    (old-names       :initarg :old-names      :initform nil)
+   (init-file       :initarg :init-file      :initform nil)
    (version                                  :initform nil)
    (revdesc                                  :initform nil)
    (time                                     :initform nil)
@@ -182,7 +183,7 @@ a message for each invalid recipe."
     (cl-assert plist)
     (let* ((symbol-keys '(:fetcher))
            (string-keys '( :url :repo :commit :branch
-                           :version-regexp :shell-command))
+                           :version-regexp :shell-command :init-file))
            (list-keys '(:files :make-targets :org-exports :old-names))
            (all-keys (append symbol-keys string-keys list-keys)))
       (dolist (thing plist)
