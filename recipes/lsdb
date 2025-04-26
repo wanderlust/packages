@@ -1,0 +1,3 @@
+(lsdb :repo "ikazuhiro/lsdb"
+      :fetcher github
+      :files ("lsdb.el" "lsdb-pkg.el"))
