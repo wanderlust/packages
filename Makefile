@@ -77,7 +77,7 @@ BUILD_CONFIG ?= ()
 
 # Channel build/targeted by other make targets.
 # When empty, use "package-build.el"'s default channel settings.
-MELPA_CHANNEL ?=
+MELPA_CHANNEL ?= wanderlust
 
 # Channels build by "docker-build-run" target.
 # To build all channels use "unstable:stable:snapshot:release".
@@ -107,6 +107,17 @@ ifndef MELPA_CHANNEL
 PKGDIR  := packages
 HTMLDIR := html
 CHANNEL_CONFIG := "()"
+
+else ifeq ($(MELPA_CHANNEL), wanderlust)
+PKGDIR  := packages
+HTMLDIR := html
+CHANNEL_CONFIG := "(progn\
+  (setq package-build-stable nil)\
+  (setq package-build-all-publishable t)\
+  (setq package-build-build-function\
+        'package-build--build-multi-file-package)\
+  (setq package-build-snapshot-version-functions\
+        '(package-build-timestamp-version)))"
 
 else ifeq ($(MELPA_CHANNEL), unstable)
 PKGDIR  := packages
