@@ -52,3 +52,7 @@ jobs:
       - name: Push commit
         run: |
           git push -f
+
+  deploy_static_contents:
+    needs: build_packages
+    uses: ./.github/workflows/static.yml
