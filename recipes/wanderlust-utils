@@ -1,0 +1,5 @@
+(wanderlust-utils
+ :fetcher github
+ :repo "wanderlust/wanderlust"
+ :files ("utils/*.el" "wanderlust-utils-pkg.el")
+ :init-file "wl.el")
