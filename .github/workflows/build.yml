@@ -1,0 +1,54 @@
+name: Build pacakges
+
+on:
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: 'build target'
+        default: 'build'
+        required: true
+        type: string
+
+jobs:
+  build_packages:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: bild-${{ inputs.targets }}
+      cancel-in-progress: true
+    env:
+      TARGETS: ${{ inputs.targets }}
+      MASTER_BRANCH: 'wanderlust'
+      PACKAGES_BRANCH: 'wanderlust-packages'
+    steps:
+      - name: Checkout local repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.PACKAGES_BRANCH }}
+      - name: Install required packages
+        run: sudo apt-get install emacs-nox texinfo findutils
+      - name: Fetch original branch
+        run: |
+          git fetch origin $MASTER_BRANCH
+      - name: Reset git reposiroty
+        run: |
+          git reset origin/$MASTER_BRANCH
+          git diff Makefile recipes package-build packages/index.html | patch -R -p 1
+      - name: Build target
+        run: |
+          if [ "$TARGETS" = "build" ]; then
+            make -j 4 build
+          else
+            echo $TARGETS | xargs -P 4 -d " " -I {} make recipes/{}
+          fi
+      - name: Build archive-contents
+        run: |
+          make archive-contents
+      - name: Commit changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "action@github.com"
+          git add -f packages/*
+          git commit -m "Update pacakges by GitHub actions"
+      - name: Push commit
+        run: |
+          git push -f
