@@ -1,7 +1,6 @@
 (wanderlust
  :fetcher github
- :repo "ikazuhiro/wanderlust"
- :branch "actions"
+ :repo "wanderlust/wanderlust"
  :files ("doc/wl.texi"
          "doc/wl-ja.texi"
          "elmo/*.el"
