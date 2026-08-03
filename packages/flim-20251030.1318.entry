@@ -1,0 +1,18 @@
+(flim .
+      [(20251030 1318)
+       ((emacs
+	 (24 5))
+	(apel
+	 (10 8))
+	(oauth2
+	 (0 11)))
+       "A library to provide basic features about message representation or encoding" tar
+       ((:url . "https://github.com/wanderlust/flim")
+	(:commit . "392c29de0acdd5d309023c9f15df49eeb063a2fa")
+	(:revdesc . "392c29de0acd")
+	(:keywords "mime" "multimedia" "mail" "news")
+	(:authors
+	 ("MORIOKA Tomohiko" . "tomo@m17n.org"))
+	(:maintainers
+	 ("Kazuhiro Ito" . "kzhr@d1.dion.ne.jp"))
+	(:maintainer "Kazuhiro Ito" . "kzhr@d1.dion.ne.jp"))])

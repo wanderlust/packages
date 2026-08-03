@@ -1,0 +1,15 @@
+(mu-cite .
+	 [(20260309 2341)
+	  ((flim
+	    (1 14 9)))
+	  "Yet another citation tool for GNU Emacs" tar
+	  ((:url . "https://github.com/cvs-m17n-org/MU-CITE")
+	   (:commit . "01345683477c6802f437a63ae2df3d8df1665f6d")
+	   (:revdesc . "01345683477c")
+	   (:keywords "mail" "news" "citation")
+	   (:authors
+	    ("MORIOKA Tomohiko" . "tomo@m17n.org")
+	    ("Shuhei KOBAYASHI" . "shuhei@aqua.ocn.ne.jp"))
+	   (:maintainers
+	    ("Katsumi Yamaoka" . "yamaoka@jpl.org"))
+	   (:maintainer "Katsumi Yamaoka" . "yamaoka@jpl.org"))])

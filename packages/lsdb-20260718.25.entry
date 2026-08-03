@@ -1,0 +1,18 @@
+(lsdb .
+      [(20260718 25)
+       ((emacs
+	 (24 5))
+	(apel
+	 (10 8))
+	(flim
+	 (1 14 9)))
+       "A rolodex-like database program for SEMI based MUA" tar
+       ((:url . "https://github.com/ikazuhiro/lsdb")
+	(:commit . "c86e493b9a1fccdf77156535cc821bd1c1d9df77")
+	(:revdesc . "c86e493b9a1f")
+	(:keywords "address" "book")
+	(:authors
+	 ("Daiki Ueno" . "ueno@unixuser.org"))
+	(:maintainers
+	 ("Kazuhiro Ito" . "kzhr@d1.dion.ne.jp"))
+	(:maintainer "Kazuhiro Ito" . "kzhr@d1.dion.ne.jp"))])

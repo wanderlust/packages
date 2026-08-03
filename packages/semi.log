@@ -1,0 +1,58 @@
+Package: semi
+Fetcher: github
+Source:  https://github.com/wanderlust/semi
+
+Cloning https://github.com/wanderlust/semi to /home/runner/work/packages/packages/working/semi/
+Checking out 5edbb0d925845a5c59abc03003569178a13d862f
+Copying files (->) and directories (=>)
+  from /home/runner/work/packages/packages/working/semi/
+  to /tmp/semiGc3DJc/semi-20251130.1009
+    mail-mime-setup.el -> mail-mime-setup.el
+    mime-edit.el -> mime-edit.el
+    mime-image.el -> mime-image.el
+    mime-mac.el -> mime-mac.el
+    mime-partial.el -> mime-partial.el
+    mime-pgp.el -> mime-pgp.el
+    mime-play.el -> mime-play.el
+    mime-setup.el -> mime-setup.el
+    mime-shr.el -> mime-shr.el
+    mime-signature.el -> mime-signature.el
+    mime-tnef.el -> mime-tnef.el
+    mime-vcard.el -> mime-vcard.el
+    mime-view.el -> mime-view.el
+    mime-w3.el -> mime-w3.el
+    semi-def.el -> semi-def.el
+    semi-pkg.el -> semi-pkg.el
+    semi-setup.el -> semi-setup.el
+    signature.el -> signature.el
+    mime-ui-en.texi -> mime-ui-en.texi
+    mime-ui-ja.texi -> mime-ui-ja.texi
+Generating mime-ui-en.info
+Generating mime-ui-ja.info
+Created semi-20251130.1009.tar containing:
+  semi-20251130.1009/
+  semi-20251130.1009/dir
+  semi-20251130.1009/mail-mime-setup.el
+  semi-20251130.1009/mime-edit.el
+  semi-20251130.1009/mime-image.el
+  semi-20251130.1009/mime-mac.el
+  semi-20251130.1009/mime-partial.el
+  semi-20251130.1009/mime-pgp.el
+  semi-20251130.1009/mime-play.el
+  semi-20251130.1009/mime-setup.el
+  semi-20251130.1009/mime-shr.el
+  semi-20251130.1009/mime-signature.el
+  semi-20251130.1009/mime-tnef.el
+  semi-20251130.1009/mime-ui-en.info
+  semi-20251130.1009/mime-ui-ja.info
+  semi-20251130.1009/mime-vcard.el
+  semi-20251130.1009/mime-view.el
+  semi-20251130.1009/mime-w3.el
+  semi-20251130.1009/semi-def.el
+  semi-20251130.1009/semi-pkg.el
+  semi-20251130.1009/semi-setup.el
+  semi-20251130.1009/signature.el
+ ✓ Success:
+  2026-08-03T00:16:48+0000  semi-20251130.1009.entry
+  2026-08-03T00:16:48+0000  semi-20251130.1009.tar
+Built semi in 2.010s, finished at 2026-08-03T00:16:48+0000

@@ -1,0 +1,72 @@
+Package: apel
+Fetcher: github
+Source:  https://github.com/wanderlust/apel
+
+Cloning https://github.com/wanderlust/apel to /home/runner/work/packages/packages/working/apel/
+Checking out 2383abfd3a27c094ae9095b05103167cf810379b
+Copying files (->) and directories (=>)
+  from /home/runner/work/packages/packages/working/apel/
+  to /tmp/apel5XgfIZ/apel-20250531.1029
+    alist.el -> alist.el
+    apel-ver.el -> apel-ver.el
+    atype.el -> atype.el
+    broken.el -> broken.el
+    calist.el -> calist.el
+    emu.el -> emu.el
+    filename.el -> filename.el
+    inv-23.el -> inv-23.el
+    invisible.el -> invisible.el
+    mcharset.el -> mcharset.el
+    mcs-20.el -> mcs-20.el
+    mcs-e20.el -> mcs-e20.el
+    mule-caesar.el -> mule-caesar.el
+    path-util.el -> path-util.el
+    pccl-20.el -> pccl-20.el
+    pccl.el -> pccl.el
+    pces-20.el -> pces-20.el
+    pces-e20.el -> pces-e20.el
+    pces.el -> pces.el
+    pcustom.el -> pcustom.el
+    poe.el -> poe.el
+    poem-e20.el -> poem-e20.el
+    poem-e20_3.el -> poem-e20_3.el
+    poem.el -> poem.el
+    product.el -> product.el
+    pym.el -> pym.el
+    richtext.el -> richtext.el
+    static.el -> static.el
+Created apel-20250531.1029.tar containing:
+  apel-20250531.1029/
+  apel-20250531.1029/alist.el
+  apel-20250531.1029/apel-pkg.el
+  apel-20250531.1029/apel-ver.el
+  apel-20250531.1029/atype.el
+  apel-20250531.1029/broken.el
+  apel-20250531.1029/calist.el
+  apel-20250531.1029/emu.el
+  apel-20250531.1029/filename.el
+  apel-20250531.1029/inv-23.el
+  apel-20250531.1029/invisible.el
+  apel-20250531.1029/mcharset.el
+  apel-20250531.1029/mcs-20.el
+  apel-20250531.1029/mcs-e20.el
+  apel-20250531.1029/mule-caesar.el
+  apel-20250531.1029/path-util.el
+  apel-20250531.1029/pccl-20.el
+  apel-20250531.1029/pccl.el
+  apel-20250531.1029/pces-20.el
+  apel-20250531.1029/pces-e20.el
+  apel-20250531.1029/pces.el
+  apel-20250531.1029/pcustom.el
+  apel-20250531.1029/poe.el
+  apel-20250531.1029/poem-e20.el
+  apel-20250531.1029/poem-e20_3.el
+  apel-20250531.1029/poem.el
+  apel-20250531.1029/product.el
+  apel-20250531.1029/pym.el
+  apel-20250531.1029/richtext.el
+  apel-20250531.1029/static.el
+ ✓ Success:
+  2026-08-03T00:16:46+0000  apel-20250531.1029.entry
+  2026-08-03T00:16:46+0000  apel-20250531.1029.tar
+Built apel in 0.884s, finished at 2026-08-03T00:16:46+0000

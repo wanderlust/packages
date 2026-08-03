@@ -1,0 +1,31 @@
+Package: wanderlust-utils
+Fetcher: github
+Source:  https://github.com/wanderlust/wanderlust
+
+Cloning https://github.com/wanderlust/wanderlust to /home/runner/work/packages/packages/working/wanderlust-utils/
+Checking out d83661ae59ea7ba2fe0c9e362ac314d4b921ffd4
+Copying files (->) and directories (=>)
+  from /home/runner/work/packages/packages/working/wanderlust-utils/
+  to /tmp/wanderlust-utilsv1z4xE/wanderlust-utils-20250531.1243
+  ! utils/im-wl.el -> im-wl.el
+  ! utils/ptexinfmt.el -> ptexinfmt.el
+  ! utils/rfc2368.el -> rfc2368.el
+  ! utils/ssl.el -> ssl.el
+  ! utils/wl-addrbook.el -> wl-addrbook.el
+  ! utils/wl-complete.el -> wl-complete.el
+  ! utils/wl-mailto.el -> wl-mailto.el
+    wanderlust-utils-pkg.el -> wanderlust-utils-pkg.el
+Created wanderlust-utils-20250531.1243.tar containing:
+  wanderlust-utils-20250531.1243/
+  wanderlust-utils-20250531.1243/im-wl.el
+  wanderlust-utils-20250531.1243/ptexinfmt.el
+  wanderlust-utils-20250531.1243/rfc2368.el
+  wanderlust-utils-20250531.1243/ssl.el
+  wanderlust-utils-20250531.1243/wanderlust-utils-pkg.el
+  wanderlust-utils-20250531.1243/wl-addrbook.el
+  wanderlust-utils-20250531.1243/wl-complete.el
+  wanderlust-utils-20250531.1243/wl-mailto.el
+ ✓ Success:
+  2026-08-03T00:16:53+0000  wanderlust-utils-20250531.1243.entry
+  2026-08-03T00:16:53+0000  wanderlust-utils-20250531.1243.tar
+Built wanderlust-utils in 6.594s, finished at 2026-08-03T00:16:53+0000

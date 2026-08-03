@@ -1,0 +1,15 @@
+(apel .
+      [(20250531 1029)
+       ((emacs
+	 (24 5)))
+       "A Portable Emacs Library provides support for portable Emacs Lisp programs" tar
+       ((:url . "https://github.com/wanderlust/apel")
+	(:commit . "2383abfd3a27c094ae9095b05103167cf810379b")
+	(:revdesc . "2383abfd3a27")
+	(:keywords "compatibility")
+	(:authors
+	 ("Shuhei KOBAYASHI" . "shuhei@aqua.ocn.ne.jp")
+	 ("Keiichi Suzuki" . "keiichi@nanap.org"))
+	(:maintainers
+	 ("Kazuhiro Ito" . "kzhr@d1.dion.ne.jp"))
+	(:maintainer "Kazuhiro Ito" . "kzhr@d1.dion.ne.jp"))])

@@ -1,0 +1,21 @@
+Package: lsdb
+Fetcher: github
+Source:  https://github.com/ikazuhiro/lsdb
+
+Cloning https://github.com/ikazuhiro/lsdb to /home/runner/work/packages/packages/working/lsdb/
+Checking out c86e493b9a1fccdf77156535cc821bd1c1d9df77
+Copying files (->) and directories (=>)
+  from /home/runner/work/packages/packages/working/lsdb/
+  to /tmp/lsdbux7abt/lsdb-20260718.25
+    lsdb.el -> lsdb.el
+    lsdb-pkg.el -> lsdb-pkg.el
+Created lsdb-20260718.25.tar containing:
+  lsdb-20260718.25/
+  lsdb-20260718.25/lsdb-pkg.el
+  lsdb-20260718.25/lsdb.el
+ ✓ Success:
+  2026-08-03T00:16:15+0000  lsdb-20250426.619.entry
+  2026-08-03T00:16:15+0000  lsdb-20250426.619.tar
+  2026-08-03T00:16:46+0000  lsdb-20260718.25.entry
+  2026-08-03T00:16:46+0000  lsdb-20260718.25.tar
+Built lsdb in 0.384s, finished at 2026-08-03T00:16:46+0000

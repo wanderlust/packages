@@ -1,0 +1,21 @@
+(wanderlust .
+	    [(20251029 1239)
+	     ((emacs
+	       (24 5))
+	      (apel
+	       (10 8))
+	      (flim
+	       (1 14 9))
+	      (semi
+	       (1 14 7)))
+	     "Yet Another Message Interface on Emacsen" tar
+	     ((:url . "https://github.com/wanderlust/wanderlust")
+	      (:commit . "06ec9fa3979d6ff3f691bed0989e2a79fef71116")
+	      (:revdesc . "06ec9fa3979d")
+	      (:keywords "mail" "net news")
+	      (:authors
+	       ("Yuuichi Teranishi" . "teranisi@gohome.org")
+	       ("Masahiro MURATA" . "muse@ba2.so-net.ne.jp"))
+	      (:maintainers
+	       ("Kazuhiro Ito" . "kzhr@d1.dion.ne.jp"))
+	      (:maintainer "Kazuhiro Ito" . "kzhr@d1.dion.ne.jp"))])

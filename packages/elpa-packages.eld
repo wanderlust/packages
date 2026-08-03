@@ -1,0 +1,8 @@
+(((apel :url "https://github.com/wanderlust/apel")
+  (flim :url "https://github.com/wanderlust/flim")
+  (lsdb :url "https://github.com/ikazuhiro/lsdb")
+  (mu-cite :url "https://github.com/cvs-m17n-org/MU-CITE")
+  (semi :url "https://github.com/wanderlust/semi")
+  (wanderlust :url "https://github.com/wanderlust/wanderlust")
+  (wanderlust-utils :url "https://github.com/wanderlust/wanderlust"))
+ :version 1 :default-vc Git)
